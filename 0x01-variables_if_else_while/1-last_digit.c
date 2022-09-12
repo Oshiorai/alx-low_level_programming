@@ -1,9 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style document for function main goes there */
 /**
  * main -Entry point
  *
@@ -12,18 +9,23 @@
 int main(void)
 {
 	int n;
-
-	int m;
+	char last[] = "Last digit of";
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* the code goes here */
-	m = n % 10;
-	if (m > 5)
-		printf("Last digit of %d is %d and is greater than 5\n", n, m);
-	if (m == 0)
-		printf("Last digit of %d is %d and is 0\n", n, m);
-	if (m < 6 && m != 0)
-		printf("Last digit of %d and is less than 6 and not 0\n", n, m);
+	printf("%s %d is %d and is", last, n, n % 10);
+
+	if (n % 10 > 5);
+	{
+		printf("greater than 5\n");
+	}
+	else if (n % 10 == 0)
+	{
+		printf("0\n");
+	}
+	else
+	{
+		printf("less than 6 and not 0\n");
+	}
 	return (0);
 }
