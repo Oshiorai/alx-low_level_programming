@@ -1,23 +1,18 @@
 #include <stdio>
 /**
- * main - Entry point
+ * main - print if the number is positive, zero, or negative
  *
- * Return: Always 0 (Success)
+ * Description: using the main function
+ * this program prints "programming is positive, zero, or negative
+ * Return: 0
  */
 int main(void)
 {
-	int d = 48;
-	char c = 'a';
+	char c;
 
-	while (d < 58)
-	{
-		putchar(d);
-		d++;
-	}
-	while (c <= 'f')
+	for (c = 'z'; c >= 'a'; c--)
 	{
 		putchar(c);
-		c++;
 	}
 	putchar('\n');
 	return (0);
