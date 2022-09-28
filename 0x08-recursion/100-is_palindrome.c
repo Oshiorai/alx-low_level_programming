@@ -27,10 +27,6 @@ int str_len(char *s)
  * Return: the state of the string
  */
 
-/**
- * code goes here
- */
-
 int check_palindrome(char *s, int len, int i)
 {
 	if (s[i] == s[len / 2])
